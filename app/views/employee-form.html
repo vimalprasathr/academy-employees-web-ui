@@ -90,7 +90,7 @@
                   Phone Number
               </label>
             </h1>
-            <input class="govuk-input" id="phoneNo" name="phoneNo" value="{{phoneNo}}" type="number" min="11" max="13">
+            <input class="govuk-input" id="phoneNo" name="phoneNo" value="{{phoneNo}}" type="number" pattern="^\s*\(?(020[7,8]{1}\)?[ ]?[1-9]{1}[0-9{2}[ ]?[0-9]{4})|(0[1-8]{1}[0-9]{3}\)?[ ]?[1-9]{1}[0-9]{2}[ ]?[0-9]{3})\s*$" maxlength="13">
 
             <h1 class="govuk-label-wrapper">
               <label class="govuk-label govuk-label--l" for="bankNo">
