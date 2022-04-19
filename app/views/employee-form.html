@@ -104,7 +104,7 @@
                   National Insurance Number
               </label>
             </h1>
-            <input class="govuk-input" id="nin" name="nin" value="{{nin}}" type="text" required>
+            <input class="govuk-input" id="nin" name="nin" value="{{nin}}" pattern="^(?!BG|GB|NK|KN|TN|NT|ZZ)[A-CEGHJ-PR-TW-Z][A-CEGHJ-NPR-TW-Z](?:\s*\d{2}){3}\s*[A-D]$" type="text" required>
 
             <h1 class="govuk-label-wrapper">
               <label class="govuk-label govuk-label--l" for="salary">
