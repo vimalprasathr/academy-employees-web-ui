@@ -27,28 +27,28 @@
                     Forename
                 </label>
             </h1>
-            <input class="govuk-input" id="fname" name="fname" value="{{fname}}" type="text">
+            <input class="govuk-input" id="fname" name="fname" value="{{fname}}" type="text" required>
 
             <h1 class="govuk-label-wrapper">
               <label class="govuk-label govuk-label--l" for="lname">
                   Surname
               </label>
           </h1>
-          <input class="govuk-input" id="lname" name="lname" value="{{lname}}" type="text">
+          <input class="govuk-input" id="lname" name="lname" value="{{lname}}" type="text" required>
 
           <h1 class="govuk-label-wrapper">
             <label class="govuk-label govuk-label--l" for="email">
                 Email
             </label>
           </h1>
-          <input class="govuk-input" id="email" name="email" value="{{email}}" type="text">
+          <input class="govuk-input" id="email" name="email" value="{{email}}" type="text" required>
 
           <h1 class="govuk-label-wrapper">
             <label class="govuk-label govuk-label--l" for="address">
                 Address Line 1
             </label>
           </h1>
-          <input class="govuk-input" id="address" name="address" value="{{address}}" type="text">
+          <input class="govuk-input" id="address" name="address" value="{{address}}" type="text" required>
 
           <h1 class="govuk-label-wrapper">
             <label class="govuk-label govuk-label--l" for="address">
@@ -69,49 +69,49 @@
                 County
             </label>
           </h1>
-          <input class="govuk-input" id="county" name="county" value="{{county}}" type="text">
+          <input class="govuk-input" id="county" name="county" value="{{county}}" type="text" required>
 
           <h1 class="govuk-label-wrapper">
             <label class="govuk-label govuk-label--l" for="postalCode">
                 Post Code
             </label>
           </h1>
-          <input class="govuk-input" id="postalCode" name="postalCode" value="{{postalCode}}" type="text">
+          <input class="govuk-input" id="postalCode" name="postalCode" value="{{postalCode}}" type="text" pattern="[A-Za-z]{1,2}[0-9Rr][0-9A-Za-z]? [0-9][ABD-HJLNP-UW-Zabd-hjlnp-uw-z]{2}" required>
 
           <h1 class="govuk-label-wrapper">
             <label class="govuk-label govuk-label--l" for="country">
                 Country
             </label>
           </h1>
-          <input class="govuk-input" id="country" name="country" value="{{country}}" type="text">
+          <input class="govuk-input" id="country" name="country" value="{{country}}" type="text" required>
 
             <h1 class="govuk-label-wrapper">
               <label class="govuk-label govuk-label--l" for="phoneNo">
                   Phone Number
               </label>
             </h1>
-            <input class="govuk-input" id="phoneNo" name="phoneNo" value="{{phoneNo}}" type="text">
+            <input class="govuk-input" id="phoneNo" name="phoneNo" value="{{phoneNo}}" type="number" min="11" max="13">
 
             <h1 class="govuk-label-wrapper">
               <label class="govuk-label govuk-label--l" for="bankNo">
                   Bank Number
               </label>
             </h1>
-            <input class="govuk-input" id="bankNo" name="bankNo" value="{{bankNo}}" type="text">
+            <input class="govuk-input" id="bankNo" name="bankNo" value="{{bankNo}}" type="number">
 
             <h1 class="govuk-label-wrapper">
               <label class="govuk-label govuk-label--l" for="nin">
                   National Insurance Number
               </label>
             </h1>
-            <input class="govuk-input" id="nin" name="nin" value="{{nin}}" type="text">
+            <input class="govuk-input" id="nin" name="nin" value="{{nin}}" type="text" required>
 
             <h1 class="govuk-label-wrapper">
               <label class="govuk-label govuk-label--l" for="salary">
                   Salary
               </label>
             </h1>
-            <input class="govuk-input" id="salary" name="salary" value="{{salary}}" type="text">
+            <input class="govuk-input" id="salary" name="salary" value="{{salary}}" type="number" min="1" max="200000" required>
         </div>
 
         <button class="govuk-button" id="submit">Submit</button>
